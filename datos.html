@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CleanWay</title>
+        <link rel="shortcut icon" href="./Imagenes/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <h2 class="nav__title">CleanWay</h2>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items"><a href="nosotros.html" class="nav__links">Nosotros</a></li>
+                    <li class="nav__items"><a href="productos.html" class="nav__links">Productos</a></li>
+                    <li class="nav__items"><a href="carrito.html" class="nav__links">Carrito</a></li>
+                    <li class="nav__items"><a href="contactos.html" class="nav__links">Contactanos</a></li>
+                    <img src="./Imagenes/close.svg" alt="" class="nav__close">
+                </ul>
+                <div class="nav__menu">
+                    <img src="./Imagenes/menu.svg" alt="" class="nav__img"/>
+                </div>
+                <ul>
+                    <li class="submenu">
+                        <a href="./carrito.html">
+                            <img src="./Imagenes/carrito.svg" id="img__carrito" alt="Carrito">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container_datos">
+            <p><strong>Datos a completar:</strong></p>
+            <div class="form-group">
+                <label>*Direccion de envio:<input type="text" id="direccion"></label>
+            </div>
+            <div class="form-group">
+                <label>*Numero de telefono:<input type="text" id="telefono"></label>
+            </div>
+            <div class="form-group">
+                <label>*Nombre:<input type="text" id="nombre"></label>
+            </div>
+            <div class="form-group">
+                <label>*Mail:<input type="text" id="mail"></label>
+            </div>
+            <div class="button-container">
+                <button class="botonCarrito" id="botonCompra">Confirmar Compra</button>
+            </div>
+            <div class="info">
+                <p>- Le llegara un msj al mail o al WhatsApp confirmando el pedido</p>
+                <p>- Todos los campos son obligatorios *</p>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CleanWay</title>
+        <link rel="shortcut icon" href="./Imagenes/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <h2 class="nav__title">CleanWay</h2>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items"><a href="nosotros.html" class="nav__links">Nosotros</a></li>
+                    <li class="nav__items"><a href="productos.html" class="nav__links">Productos</a></li>
+                    <li class="nav__items"><a href="carrito.html" class="nav__links">Carrito</a></li>
+                    <li class="nav__items"><a href="contactos.html" class="nav__links">Contactanos</a></li>
+                    <img src="./Imagenes/close.svg" alt="" class="nav__close">
+                </ul>
+                <div class="nav__menu">
+                    <img src="./Imagenes/menu.svg" alt="" class="nav__img"/>
+                </div>
+                <ul>
+                    <li class="submenu">
+                        <a href="./carrito.html">
+                            <img src="./Imagenes/carrito.svg" id="img__carrito" alt="Carrito">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="carrito-container">
+            <img src="./Imagenes/carritoNegro.svg" alt="Carrito de compras" class="icono-carrito">
+    
+            <h2>Lista de productos en el carrito:</h2>
+            <div class="carrito-items" id="carrito-items"></div>
+    
+            <p class="envio">Precio de envío: <span id="precio-envio">500</span></p>
+            <p class="total">Total: <span id="total">0</span></p>
+    
+            <a href="./datos.html" class="botonCarrito" id="comprar">COMPRAR</a>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
