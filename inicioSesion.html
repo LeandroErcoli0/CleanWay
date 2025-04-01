@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CleanWay</title>
+        <link rel="shortcut icon" href="./Imagenes/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/estiloslogin.css">
+    </head>
+    <body>
+        <main>
+        <div id="contenedor_todo" class="contenedor_todo">
+            <div class="caja_trasera">
+                <div class="caja_trasera_login">
+                    <h3>Ya tienes una cuenta?</h3>
+                    <p>Incia sesion para entrar en la pagina</p>
+                    <button id="btn_iniciar_sesion">INICIAR SESION</button>
+                </div>
+                <div class="caja_trasera_registro">
+                    <h3>Aun no tienes cuenta?</h3>
+                    <p>Registrate [ara que puedas iniciar sesion</p>
+                    <button id="btn_registrarse">REGISTRARSE</button>
+                </div>
+            </div>
+            <div class="contenedor_formularios">
+                <form action="" class="formulario_log">
+                    <h2>INICIAR SESION</h2>
+                    <input type="text" placeholder="Nombre de usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                </form>
+                <form action="php/registro_usuario_be.php" method="POST" class="formulario_reg">
+                    <h2>REGISTRARSE</h2>
+                    <input type="text" placeholder="Nombre Completo" name="nombre_completo" required>
+                    <input type="text" placeholder="Nombre de usuario" name="nombre_usuario" required>
+                    <input type="text" placeholder="Correo Electronico" name="correo" required>
+                    <input type="tel" placeholder="Telefono" name="telefono" required>
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+    </body>
+</html>
